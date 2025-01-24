@@ -1,0 +1,144 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+section{
+    /*background-color: #68b0ab;*/
+    height: 100vh;
+    width: 100%;
+    padding: 3%;;
+    
+}
+section .Grid_container{
+    display: grid;
+    height: 80vh;
+    width: 70%;
+    gap: 4px;
+    padding: 8px;
+    margin: 2% auto;
+    border: 1px solid #68b0ab;
+    background-color: white;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.8fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: 
+                        "Regis_heading Regis_heading Regis_heading"
+                        "std_name fName gender"
+                        "email email DOB "
+                        "phone Temp_addr Temp_addr"
+                        "Per_add Per_add upload_img"
+                        "Note Note Note"
+                        "submit submit submit";
+}
+
+.Regis_heading{
+    grid-area: Regis_heading;
+    /*background-color: blue;*/
+}
+
+.std_name{
+    grid-area: std_name;
+    /*background-color:skyblue ;*/
+}
+.fName{
+    grid-area: fName;
+    /*background-color: #254725;*/
+}
+.gender{
+    grid-area: gender;
+   /* background-color: yellowgreen;*/
+}
+
+.email{
+    grid-area: email;
+  /*background-color: rebeccapurple;*/
+}
+.DOB{
+    grid-area: DOB;
+    /*background-color: palevioletred;*/
+}
+.phone{
+    grid-area: phone;
+    /*background-color: green;*/
+}
+.Temp_addr{
+    grid-area: Temp_addr;
+   /* background-color: orange;*/
+}
+.Per_add{
+    grid-area: Per_add;
+    /*background-color: yellow;*/
+}
+.upload_img{
+grid-area: upload_img;
+/*background-color: pink;*/
+}
+.Note{
+    grid-area: Note;
+    /*background-color: rgb(177, 14, 114);*/
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    color: #686a63;
+}
+.Note p span {
+    color: red;
+    font-weight: bold;
+}
+.submit{
+    grid-area: submit;
+    /*background-color: blueviolet;*/
+}
+
+input{
+    padding: 10px;
+    font-size: 15px;
+    width: 100%;
+    color: #696c64;
+    background: #f5f5f5;
+    border-radius: 4px;
+    border: 1px solid #68b0ab;;
+    margin: auto;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Date and time input*/
+.div_padd1 input{
+    padding: 9px;
+    cursor: pointer;
+}
+
+/*File upload*/
+.div_padd input{
+    padding: 7px;
+    cursor: pointer;
+}
+
+.Regis_heading h1{
+   
+    padding: 10px 25px;
+    color: #68b0ab;
+    border: 1px solid #68b0ab;
+
+}
+
+.submit button{
+    border: 1px solid #68b0ab;
+    padding: 12px 23px;
+    background-color: white;
+    cursor: pointer;
+    color: #68b0ab;
+    font-weight: 800;
+    text-transform: uppercase;
+
+}
+.submit button a{
+    text-decoration: none;
+   
+}
+

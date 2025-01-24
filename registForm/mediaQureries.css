@@ -1,0 +1,68 @@
+@media screen and (max-width: 992px) {
+    section .Grid_container{
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 0.8fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-areas: 
+                            "Regis_heading Regis_heading"
+                            "std_name fName"
+                            "email gender"
+                            "DOB phone "
+                            "upload_img Temp_addr"
+                            "Per_add Per_add "
+                            "Note Note "
+                            "submit submit ";
+    }
+
+    h1{
+        font-size: 16px;
+    }
+    p{
+        font-size: 12px;
+    }
+    button{
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 567px){
+    section .Grid_container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.8fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-areas: 
+                            "Regis_heading"
+                            "std_name"
+                            "fName"
+                            "email"
+                            "gender"
+                            "DOB"
+                            "phone"
+                            "upload_img"
+                            "Temp_addr"
+                            "Per_add"
+                            "Per_add "
+                            "Note"
+                            "submit";
+    }
+
+    input {
+        padding: 6px;
+        font-size: 12px;
+    }
+    .Regis_heading h1 {
+        padding: 7px 14px;
+    }
+    .submit button {
+        padding: 8px 15px;
+    }
+
+    h1{
+        font-size: 16px;
+    }
+    p{
+        font-size: 12px;
+    }
+    button{
+        font-size: 12px;
+    }
+}
